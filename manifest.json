@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Github PR file view extension",
+  "description": "Extension to switch file views checkboxes on Github pull requests file changes",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "github.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ]
+}
