@@ -1,8 +1,43 @@
 <html>
   <body>
     <script src="func.js"></script>
-    <button id="view-all">View all files</button>
-    <button id="unview-all">Unview all files</button>
-    <button id="switch-all">Switch all views</button>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+      }
+
+      #tooltip {
+        width: 15rem;
+        font-size: large;
+      }
+
+      .btn {
+        margin: .3rem;
+        width: 10rem;
+        height: 2rem;
+        border-radius: 1rem;
+      }
+
+      #view-all {
+        background-color: rgb(28, 130, 28);
+      }
+
+      #unview-all {
+        background-color: rgb(147, 13, 13);
+      }
+
+      #switch-all {
+        background-color: rgb(94, 94, 217);
+      }
+    </style>
+    <p id="tooltip">Working on a github pull request</a></p>
+    <div id="container" hidden>
+      <button class="btn" id="view-all">View all files</button>
+      <button class="btn" id="unview-all">Unview all files</button>
+      <button class="btn" id="switch-all">Switch all views</button>
+    </div>
   </body>
 </html>
